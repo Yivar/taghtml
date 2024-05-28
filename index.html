@@ -1,0 +1,523 @@
+<!-- Document type and version -->
+<!--https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/html-tags/-->
+<!--https://html5doctor.com/-->
+<!--https://oregoom.com/html/input/-->
+<!DOCTYPE html>
+<!-- Root element -->
+<html lang="en">
+
+<head>
+    <!-- Metadata about the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="John Doe"> <!-- author metadata -->
+    <meta name="description" content="This is a sample HTML document"> <!-- description metadata -->
+    <meta name="keywords" content="HTML, CSS, JavaScript"> <!-- keywords metadata -->
+
+    <!-- Links to external stylesheets and scripts -->
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- external stylesheet -->
+    <script src="script.js"></script> <!-- external script -->
+    <!-- Setting the document title -->
+    <title>HTML5 and HTML4.01 Tags</title>
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Setting the base URL for relative URLs -->
+    <base href="https://example.com/">
+    <style>
+        html{
+            color-scheme: dark;
+            background-color: #1c2128;
+        }
+        :root {
+            --dar-defal:#1c2128;
+            --bgColor-default: #22272e;
+            --font-weight: 400;
+            --fgColor-default:#c5d1de;
+
+            --fgColor-default_:#1f2328;
+            /*h2*/
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"] {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        input[type="tel"]:focus {
+            border: 1px solid #4CAF50;
+            outline: none;
+        }
+
+        input[type="text"]:invalid,
+        input[type="email"]:invalid,
+        input[type="password"]:invalid,
+        input[type="tel"]:invalid {
+            border: 1px solid #f44336;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"],
+        input[type="button"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Tag de Seccion</h1>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section>
+                    <h1>Section 1</h1>
+                    <p>This is some content.</p>
+                </section>
+                <section>
+                    <h1>Section 2</h1>
+                    <p>This is some more content.</p>
+                </section>
+            </main>
+            <aside>
+                <h2>Related Content</h2>
+                <p>This is some related content.</p>
+            </aside>
+            <footer>
+                <p>&copy; 2023 My Company</p>
+            </footer>
+            <hr>
+        </section>
+        <section>
+            <h1>Tag de letras</h1>
+
+            <h1>Main Title</h1>
+
+            <p>This is a paragraph of text. It can be <em>emphasized</em> or <strong>strongly emphasized</strong>.</p>
+
+            <p>This is another paragraph of text. It can contain <code>code snippets</code>, <kbd>keyboard input</kbd>,
+                or <samp>sample output</samp>.</p>
+
+            <p>You can also use <var>variables</var> to represent values or <sub>subscripts</sub> to indicate a
+                subscript.</p>
+
+            <p>And finally, you can use <sup>superscripts</sup> to indicate a superscript.</p>
+
+            <p>Here is an example of a <b>bold</b> and an <i>italic</i> text.</p>
+            <p>Este texto es <b>negrita</b>, <i>cursiva</i>, y <u>subrayado</u>.</p>
+            <p>Este texto está <s>tachado</s> y <strike>también tachado</strike>.</p>
+
+            <p>Este es un <tt>texto en fuente monospace</tt> y un <code>trozo de código</code>.</p>
+
+            <p>Pulsa <kbd>Ctrl+C</kbd> para copiar y <kbd>Ctrl+V</kbd> para pegar.</p>
+
+            <p>La salida será <samp>Salida de ejemplo</samp>.</p>
+
+            <p>El valor de <var>x</var> es 10.</p>
+
+            <p>Este es un texto <em>énfasis</em> y un texto <strong>fuerza énfasis</strong>.</p>
+
+            <p>Este es un <sub>índice</sub> y un <sup>exponente</sup>.</p>
+
+            <p>Este es un texto <mark>marcado</mark>.</p>
+
+            <p>Este es un término <dfn>definido</dfn>.</p>
+
+            <p>Este es un texto <abbr>abreviado</abbr>.</p>
+
+            <p>Este es un trabajo <cite>citado</cite>.</p>
+            <p>Como dijo <q>Albert Einstein</q>, "La imaginación es más importante que el conocimiento."</p>
+
+            <p>Este es un párrafo con <mark>texto destacado</mark>.</p>
+
+            <p>Este es un párrafo con <em>texto con énfasis</em>.</p>
+
+            <p>Este es un párrafo con <strong>texto con énfasis fuerte</strong>.</p>
+
+            <p>Este es un párrafo con <u>texto subrayado</u>.</p>
+
+            <p>Este es un párrafo con una cita:
+            <blockquote>Este es un texto citado</blockquote>.</p>
+
+            <p>Este es un párrafo con <mark>texto destacado</mark>, <em>texto con énfasis</em>, y <strong>texto con
+                    énfasis fuerte</strong>.</p>
+
+            <p>Este es un párrafo con <u>texto subrayado</u> y una cita:
+            <blockquote>Este es un texto citado</blockquote>.</p>
+            <br>
+        </section>
+        <section>
+            <h1>Tag de H</h1>
+            <p>This is the main content of the page.</p>
+
+            <h2>Section 1</h2>
+            <p>This is the content of Section 1.</p>
+
+            <h3>Subsection 1.1</h3>
+            <p>This is the content of Subsection 1.1.</p>
+
+            <h4>Sub-subsection 1.1.1</h4>
+            <p>This is the content of Sub-subsection 1.1.1.</p>
+
+            <h5>Sub-sub-subsection 1.1.1.1</h5>
+            <p>This is the content of Sub-sub-subsection 1.1.1.1.</p>
+
+            <h6>Minor detail</h6>
+            <p>This is a minor detail of the page.</p>
+            <br>
+        </section>
+        <section>
+            <h1>Tag de agrupamiento </h1>
+
+            <pre>
+                Este es un texto
+                preformateado.
+                Los espacios en blanco
+                se conservarán.
+              </pre>
+
+            <blockquote>
+                "La sabiduría es el arte de saber qué saber."
+                - Sócrates
+            </blockquote>
+
+            <h2>Lista ordenada</h2>
+            <ol>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ol>
+
+            <h2>Lista desordenada</h2>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+
+            <h2>Lista de definiciones</h2>
+            <dl>
+                <dt>Término 1</dt>
+                <dd>Definición del término 1</dd>
+                <dt>Término 2</dt>
+                <dd>Definición del término 2</dd>
+            </dl>
+
+            <figure>
+                <img src="imagen.jpg" alt="Descripción de la imagen">
+                <figcaption>Pie de foto</figcaption>
+            </figure>
+            <br>
+        </section>
+        <section>
+            <h1>Tag de tablas</h1>
+            <table>
+                <colgroup>
+                    <col style="background-color: lightgray;">
+                    <col span="2" style="background-color: lightblue;">
+                </colgroup>
+                <caption>Tabla de Ejemplo</caption>
+                <thead>
+                    <tr>
+                        <th>Columna 1</th>
+                        <th>Columna 2</th>
+                        <th>Columna 3</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Pie de tabla</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                        <td>Dato 3</td>
+                    </tr>
+                    <tr>
+                        <td>Dato 4</td>
+                        <td>Dato 5</td>
+                        <td>Dato 6</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+        </section>
+        <section>
+            <h1>Tag de formulario</h1>
+            <form action="procesar_formulario.php" method="post">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
+
+                    <label for="correo_electronico">Correo electrónico:</label>
+                    <input type="email" id="correo_electronico" name="correo_electronico"
+                        placeholder="Ingrese su correo electrónico" required>
+
+                    <label for="color_favorito">Color favorito (datalist):</label>
+                    <input type="text" id="color_favorito" name="color_favorito" list="colores">
+                    <datalist id="colores">
+                        <option value="Rojo">Rojo</option>
+                        <option value="Verde">Verde</option>
+                        <option value="Azul">Azul</option>
+                        <option value="Amarillo">Amarillo</option>
+                    </datalist>
+
+                    <label for="pais">País (optgroup):</label>
+                    <select id="pais" name="pais" required>
+                        <optgroup label="Sudamérica">
+                            <option value="AR">Argentina</option>
+                            <option value="BO">Bolivia</option>
+                            <option value="BR">Brasil</option>
+                        </optgroup>
+                        <optgroup label="Europa">
+                            <option value="ES">España</option>
+                            <option value="FR">Francia</option>
+                            <option value="DE">Alemania</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="clave_privada">Clave privada (keygen):</label>
+                    <input type="keygen" id="clave_privada" name="clave_privada">
+
+                    <label for="carga_archivo">Carga de archivo (solo demostración):</label>
+                    <input type="file" id="carga_archivo" name="carga_archivo" disabled>
+
+                    <label for="progreso_carga">Progreso de carga (solo demostración):</label>
+                    <progress id="progreso_carga" value="0" max="100"></progress>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferencias</legend>
+                    <label for="notificaciones">Notificaciones por email:</label>
+                    <input type="checkbox" id="notificaciones" name="notificaciones">
+
+                    <label for="zona_horaria">Zona horaria:</label>
+                    <select id="zona_horaria" name="zona_horaria">
+                        <option value="-03:00">GMT-3 (Argentina, Brasil)</option>
+                        <option value="-05:00">GMT-5 (EST)</option>
+                        <option value="00:00">GMT+0 (Londres)</option>
+                    </select>
+
+                    <label for="lenguaje">Lenguaje:</label>
+                    <input type="radio" id="lenguaje_es" name="lenguaje" value="es" checked>
+                    <label for="lenguaje_es">Español</label>
+
+                    <input type="radio" id="lenguaje_en" name="lenguaje" value="en">
+                    <label for="lenguaje_en">Inglés</label>
+                </fieldset>
+
+                <button type="submit">Enviar formulario</button>
+            </form>
+
+            <form>
+                <!-- Input type="email" -->
+                <p>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <!-- Input type="url" -->
+                <p>
+                    <label for="url">Dirección URL:</label>
+                    <input type="url" id="url" name="url" required>
+                </p>
+
+                <!-- Input type="tel" -->
+                <p>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </p>
+
+                <!-- Input type="number" -->
+                <p>
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="18" max="100" required>
+                </p>
+
+                <!-- Input type="range" -->
+                <p>
+                    <label for="nivel">Nivel de satisfacción:</label>
+                    <input type="range" id="nivel" name="nivel" min="0" max="10" value="5">
+                </p>
+
+                <!-- Input type="color" -->
+                <p>
+                    <label for="color">Color favorito:</label>
+                    <input type="color" id="color" name="color" value="#ff0000">
+                </p>
+
+                <!-- Input type="date" -->
+                <p>
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </p>
+
+                <!-- Input type="time" -->
+                <p>
+                    <label for="hora">Hora de cita:</label>
+                    <input type="time" id="hora" name="hora" required>
+                </p>
+
+                <!-- Input type="datetime-local" -->
+                <p>
+                    <label for="fecha-hora">Fecha y hora de cita:</label>
+                    <input type="datetime-local" id="fecha-hora" name="fecha-hora" required>
+                </p>
+
+                <!-- Input type="month" -->
+                <p>
+                    <label for="mes">Mes de nacimiento:</label>
+                    <input type="month" id="mes" name="mes" required>
+                </p>
+
+                <!-- Input type="week" -->
+                <p>
+                    <label for="semana">Semana de nacimiento:</label>
+                    <input type="week" id="semana" name="semana" required>
+                </p>
+
+                <!-- Input type="search" -->
+                <p>
+                    <label for="busqueda">Búsqueda:</label>
+                    <input type="search" id="busqueda" name="busqueda" required>
+                </p>
+
+                <!-- Input type="file" -->
+                <p>
+                    <label for="archivo">Archivo:</label>
+                    <input type="file" id="archivo" name="archivo" required>
+                </p>
+
+                <!-- Botón de envío -->
+                <p>
+                    <button type="submit">Enviar</button>
+                </p>
+            </form>
+
+            <h1>Formulario de Ejemplo</h1>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+
+                <br><br>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico" required>
+
+                <br><br>
+
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña" required>
+
+                <br><br>
+
+                <label>Intereses:</label>
+                <input type="checkbox" id="deporte" name="intereses" value="deporte">
+                <label for="deporte">Deporte</label>
+                <input type="checkbox" id="arte" name="intereses" value="arte">
+                <label for="arte">Arte</label>
+
+                <br><br>
+
+                <label>Género:</label>
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="femenino" name="genero" value="femenino">
+                <label for="femenino">Femenino</label>
+
+                <br><br>
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="1" max="120" placeholder="Ingrese su edad" required>
+
+                <br><br>
+
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+
+                <br><br>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono">
+
+                <br><br>
+
+                <label for="archivo">Archivo:</label>
+                <input type="file" id="archivo" name="archivo">
+
+                <br><br>
+
+                <label for="volumen">Volumen:</label>
+                <input type="range" id="volumen" name="volumen" min="0" max="100" step="1">
+
+                <br><br>
+
+                <input type="submit" value="Enviar">
+                <input type="button" value="Reiniciar" onclick="resetForm()">
+            </form>
+
+            <h1>Generación de claves</h1>
+            <keygen name="clave_seguridad" form="formulario_clave">
+
+            <h1>Calculadora</h1>
+            <form oninput="resultado.value=parseInt(numero1.value)+parseInt(numero2.value)">
+                <input type="number" name="numero1" value="0"> +
+                <input type="number" name="numero2" value="0"> =
+                <output name="resultado"></output>
+            </form>
+
+            <h1>Progreso de carga</h1>
+            <progress value="75" max="100">75%</progress>
+
+            <h1>Medidor de calificación</h1>
+            <meter value="0.8">80%</meter>
+            <br>
+        </section>
+    </main>
+</body>
+
+</html>
